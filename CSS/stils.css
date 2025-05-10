@@ -1,0 +1,19 @@
+body {
+    background-image: url('../images/aback.jpg');
+    background-position: center;
+    font-family: "Lato", sans-serif;
+    margin-top: 90px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 100px; /* Pielāgo atbilstoši navigācijas joslas augstumam */
+    margin-top: 100px;
+}
+

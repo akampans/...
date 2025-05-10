@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mans plakāts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/stils.css">
+
+<style>
+body {
+        font-family: 'Lato', sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(50, 0, 70, 0.4)), 
+                    url('images/aback.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin-top: 100px;
+        color: #f5f5f5;
+    }
+
+    h1, h3, h4, p {
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .w3-top {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.w3-bar {
+    background-color: #4A90E2 !important; /* Soft blue */
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.w3-bar a {
+    color: white !important;
+    padding: 14px 20px;
+    margin: 0 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.w3-bar a:hover {
+    background-color: #357ABD !important;
+    color: #fff !important;
+    
+}
+
+.w3-dropdown-content {
+    background-color: #4A90E2;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.w3-dropdown-content a {
+    color: white !important;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.w3-dropdown-content a:hover {
+    background-color: #357ABD !important;
+}
+
+    .w3-panel {
+        padding: 25px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        max-width: 80%;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    img, video {
+        display: block;
+        margin: 15px auto;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+    }
+
+    a {
+        color: #00e0ff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #ff80ab;
+    }
+</style>
+</head>
+<body>
+    
+    
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">SĀKUMS</a>
+        <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">IZKLĀJLAPAS</a>
+    <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">TEKSTA APSTRĀDE</a>
+    <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">VIDEO</a>
+        <a href="index.html#model" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">3D MODELĒŠANA</a>
+
+    <div class="w3-dropdown-hover w3-hide-small w3-hover-white">
+      <button class="w3-button w3-padding-large">ATTĒLU APSTRĀDE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-black">
+        <a href="index.html#rastr" class="w3-bar-item w3-button w3-hover-white">RASTRGRAFIKA</a>
+        <a href="index.html#vektor" class="w3-bar-item w3-button w3-hover-white">VEKTORGRAFIKA</a>
+      </div>
+    </div>
+
+
+    
+    
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-white" onclick="myFunction()">IZKLĀJLAPAS</a>
+    <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hover-white" onclick="myFunction()">TEKSTA APSTRĀDE</a>
+  <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hover-white" onclick="myFunction()">VIDEO</a>
+  <a href="index.html#model" class="w3-bar-item w3-button w3-padding-large w3-hover-white" onclick="myFunction()">3D MODELĒŠANA</a>
+
+  <a href="index.html#gimp" class="w3-bar-item w3-button w3-padding-large w3-hover-white" onclick="myFunction()">ATTĒLU APSTRĀDE</a>
+  
+ 
+</div>
+
+<div>
+    <div class="w3-panel">
+              
+    <h1>Mans plakāts</h1>
+    
+    <div>
+      
+        <p>Biometriskās identifikācijas izmantošana ir lielisks risinājums, ja:</p>
+            
+           <p> Jums ir iepriekšējais Smart-ID konts (un joprojām ir piekļuve tālruņa numuram vai e-pasta adresei, ko izmantojāt iepriekšējam kontam).
+Jums ir Igaunijas, Latvijas vai Lietuvas personu apliecinošs dokuments ar elektronisko čipu *Elektroniskai autentifikācijai nevar izmantot eID karti vai Mobile-ID.
+Ir jābūt derīgam personu apliecinošam dokumentam, kas ir derīgs arī ceļošanai.
+Jūs nevēlaties izmantot Smart-ID Basic kontu ar ierobežotu piekļuvi (pieejams Latvijā un Lietuvā).
+Jūs nevēlaties doties uz vietējo bankas filiāli katru reizi, kad maināt ierīci vai vēlaties atjaunot kontu.
+Jūs esat nepilngadīgs un vēlaties iegūt Smart-ID pilnas piekļuves kontu.
+Biometriskā identifikācija ļauj jums ieskenēt jūsu dokumentus pašiem, neizejot no savas mājas!
+        </p>
+     
+
+    <img src="images/plakats.png" alt="mans plakāta" width="400">
+    <br>
+    <a href="https://www.smart-id.com/lv/help/faq/biometriska-identifikacija/3-posms-konta-piesaistisana-jusu-identitatei/" target="_blank">Mani avoti</a>
+
+    </div>
+    </div>
+    </div>
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
